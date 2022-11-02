@@ -8,7 +8,7 @@ int fib(int n)
 int main()
 {
     std::cout << "Geben sie an die wievielte fib. Zahl sie suchen: ";
-    int n = 0;
+    std::uintmax_t n = 0;
     std::cin >> n;
     std::cout << "fib(" << n << ") = " << fib(n) << "\n";
 }
