@@ -26,7 +26,7 @@ void readfile(string file)
             cout << line << '\n';
         }
 
-        myfile.close();
+        myfile.close(); 
     }
 }
 
