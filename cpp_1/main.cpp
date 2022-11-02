@@ -5,11 +5,11 @@
 using namespace std;
 
 void readfile(string file); 
-void writefile(string file);
+void writefile(string file, string text);
 
 int main()
 {
-    writefile("./testfile.txt");
+    writefile("./testfile.txt","Hallo Welt!");
     readfile("./testfile.txt");
     return 0;
 }
@@ -30,14 +30,14 @@ void readfile(string file)
     }
 }
 
-void writefile(string file)
+void writefile(string file, string text)
 {
     string line;
     ofstream myfile;
     myfile.open(file,std::ios_base::app);
     if (myfile.is_open())
     {
-        myfile << "hallo\n";
+        myfile << text+"\n";
     }
     myfile.close();
 }
