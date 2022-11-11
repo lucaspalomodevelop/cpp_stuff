@@ -1,4 +1,3 @@
-#include "tier.cpp"
 #include "hund.cpp"
 #include "katze.cpp"
 #include <stdio.h>
